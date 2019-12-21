@@ -22,6 +22,7 @@ class CreateSurveysTable extends Migration
             $table->string('q4')->nullable();
             $table->string('q5')->nullable();
             $table->string('q6')->nullable();
+            $table->string('q7')->nullable();
             $table->integer('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
