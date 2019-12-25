@@ -68,7 +68,7 @@ class AdsController extends Controller
     		$ads = ConsumerAds::all();
 	        return response()->json($ads);
     	}else{
-    		$ads = SellerAds::get();
+    		$ads = SellerAds::all();
 	        return response()->json($ads);
     	}
     }
